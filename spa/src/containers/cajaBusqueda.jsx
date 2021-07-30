@@ -1,5 +1,6 @@
 import React from 'react';
-import Navbar from 'react-bootstrap/Navbar'
+import Navbar from 'react-bootstrap/Navbar';
+import Logo from '../assets/Logo_ML.png';
 
 // function UpBar() {
 //     return(
@@ -10,7 +11,11 @@ import Navbar from 'react-bootstrap/Navbar'
 const CajonDeBusqueda = props => {
     return (
         <>
-            <Navbar bg="#FFE600" variant="dark" />
+            <Navbar style={{background: '#FFE600'}} >
+                <Navbar.Brand>
+                    <img src={Logo} />
+                </Navbar.Brand>
+            </Navbar>
         </>
     );
 }

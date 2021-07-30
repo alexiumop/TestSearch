@@ -1,4 +1,4 @@
-# TestSearch - Contiene una SPA construida en React y un BFF construido en NodeJS
+# TestSearch - Contiene una SPA construida en React y un servidor creado a partir de un archivo httpClient.js
 
 ## **SPA** :computer: :chart_with_upwards_trend: :mag_right: _:_
 
@@ -16,7 +16,7 @@
 
  _Para ruteo:_ :airplane:
  
-  - React-router
+  - react-router-dom
 
  _Para estilizado:_ :art:
  

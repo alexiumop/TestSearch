@@ -1,9 +1,12 @@
 import React from 'react';
+import CajonDeBusqueda from './cajaBusqueda';
+import ResultsItems from '../components/mapper';
 
 const ResultadosBusqueda = props => {
     return (
         <>
-        Render 2
+            <CajonDeBusqueda {...props} />
+            <ResultsItems {...props} />
         </>
     )
 }

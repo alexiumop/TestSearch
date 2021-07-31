@@ -1,4 +1,4 @@
-/* Estilos página principal */
+/* Estilos buscador */
 
 .navBar-color {
     background-color: #FFE600;
@@ -25,4 +25,12 @@
     background-color: #EEEEEE;
     border-color: #EEEEEE;
     border-radius: 0px;
+}
+
+/* Estilos lista de items */
+
+.thumbnail-fit {
+    width: 180px;
+    height: 180px;
+    border-radius: 4px;
 }

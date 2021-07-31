@@ -12,7 +12,7 @@ const CajonDeBusqueda = props => {
                         <img src={Logo} alt="ML"/>
                     </Navbar.Brand>
                     <Navbar.Collapse>
-                        <Searcher />
+                        <Searcher {...props} />
                     </Navbar.Collapse>
                 </div>
             </Navbar>

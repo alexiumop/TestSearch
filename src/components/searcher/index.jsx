@@ -3,14 +3,7 @@ import { FormControl, Form, Button } from 'react-bootstrap';
 import httpClient from '../../server/httpClient';
 import Lupa from '../../assets/ic_Search.png';
 
-// function SubmitSearch(related) {
-//     httpClient.getSimpleSearch(related)
-//     .then(result => {
-//         console.log('respuesta json:', result);
-//     });
-// }
-
-const Searcher = () => {
+const Searcher = props => {
     const [queryTyper, setQueryTyper] = useState('');
     const handleChange = event => {
         let query = event.target.value;
@@ -19,7 +12,11 @@ const Searcher = () => {
     const handleSubmitSearch = () => {
         httpClient.getSimpleSearch(queryTyper)
         .then(result => {
-            console.log('respuesta json:', result);
+            let listResults = result.data.results;
+            props.history.push({
+                pathname: '/items',
+                state: listResults
+            });
         });
     }
     return(

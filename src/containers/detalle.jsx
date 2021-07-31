@@ -8,6 +8,7 @@ const DetalleItem = props => {
         <>
             <CajonDeBusqueda {...props} />
             <Container>
+                <div className="margin-all"></div>
                 <Items {...props} />
             </Container>
         </>

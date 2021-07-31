@@ -6,6 +6,7 @@ const ResultadosBusqueda = props => {
     return (
         <>
             <CajonDeBusqueda {...props} />
+            <div className="margin-all"></div>
             <ResultsItems {...props} />
         </>
     )

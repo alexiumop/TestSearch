@@ -1,3 +1,7 @@
+/* Generales*/
+.margin-all {
+    margin-top: 16px;
+}
 /* Estilos buscador */
 
 .navBar-color {
@@ -33,4 +37,42 @@
     width: 180px;
     height: 180px;
     border-radius: 4px;
+}
+
+/* Estilos del detalle del producto */
+
+.carousel-image {
+    width: 680px;
+    height: 480px;
+}
+
+.title-description {
+    font-size: 28px;
+    color: #666666;
+}
+
+.text-description {
+    font-size: 16px;
+    color: #999999;
+    text-align: justify;
+}
+.conditions-product-card {
+    margin-top:32px;
+    font-size: 14px;
+    color: #666666
+}
+.title-product-card {
+    margin-top:16px;
+    font-size:24px;
+    color:#333333
+}
+.price-product-card {
+    margin-top:32px;
+    margin-bottom:32px;
+    font-size:46px;
+    color:#333333
+}
+.button-product-card {
+    margin-right: 32px;
+    width: 300px;
 }

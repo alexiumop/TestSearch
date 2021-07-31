@@ -2,6 +2,10 @@
 
 ## **SPA** :computer: :chart_with_upwards_trend: :mag_right: _:_
 
+**Instalación de dependencias:**
+
+>Luego de hacer git clone del repositorio y antes de levantarlo en el entorno local es indispensable realizar un **npm install** para agregar todas las dependencias y generar la carpeta **node_modules**
+
 **Scripts de inicio:** 
 
   - npm run start:local (_Este script es utilizado para levantar la spa en modo local_)

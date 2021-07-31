@@ -39,6 +39,18 @@
 
   > **_detalle.jsx_** Contiene el componente que mapea el producto y su descripción y breadcrumbs.
 
+**Componentes de la SPA:**
+
+  1. **Searcher** utilizado en el contenedor de caja de busqueda, es el buscador de la SPA.
+  2. **Breadcrumbs** utilizado para tomar las urls relacionadas y navegación en el sitio, se implementa en todos los contenedores.
+  3. **Mapper** utilizado para mapear la lista de resultados en el contenedor de resultados de la busqueda.
+  4. **Item** utilizado para mapear el producto por id en el contenedor de detalle, contiene un sub-componente para crear un carousel de imagenes, mapea la descripción del producto.
+  5. **Carousel** utilizado en el componente de mapeo del item para generar un carousel de imagenes.
+
+**Layout:**
+
+> Contiene un wrapper nombrado **body.jsx** y en dicho wrapper se encuentra el ruteo de los 3 contenedores de la SPA.
+
 ## **Server (Client-side)** 💻 _:_
 
 > **Archivo httpClient.js generado para realizar las invocaciones con axios desde la SPA.**

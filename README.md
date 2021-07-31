@@ -30,3 +30,7 @@
 ## **Server** 💻 _:_
 
 > **Archivo httpClient.js generado para realizar las invocaciones con axios desde la SPA.**
+
+- **_Se generó una función de invocación generica donde se le devuelven la url de las funciones para invocar servicios y los metodos_**
+
+- **_Se generó una función llamada getSimpleSearch donde se le envia el query para invocar al servicio de busqueda de ML_**

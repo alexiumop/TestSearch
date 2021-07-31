@@ -48,3 +48,5 @@
 - **_Se generó una función llamada getSimpleSearch donde se le envia el query para invocar al servicio de busqueda de ML_**
 
 - **_Se generó una función llamada getSimpleProductById donde se le envia el id del producto para que en su respuesta solo me devuelva información de dicho producto_**
+
+- **_Se generó una función llamada getSimpleProductByIdDesc donde se le envia el id del producto y solo se solicita la descripción especifica de ese producto en su respuesta_**

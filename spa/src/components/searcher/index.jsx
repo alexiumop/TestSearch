@@ -9,10 +9,10 @@ const Searcher = () => {
                 <FormControl
                     type="search"
                     placeholder="Nunca dejes de buscar"
-                    className="mr-2"
+                    className="nav-search-input"
                     aria-label="Search"
                 />
-                <Button variant="outline-success"><img src={Lupa} alt="Lupa" /></Button>
+                <Button className="nav-button-search"><img src={Lupa} alt="Lupa" /></Button>
             </Form>
         </>
     )

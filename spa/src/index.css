@@ -1,0 +1,28 @@
+/* Estilos página principal */
+
+.navBar-color {
+    background-color: #FFE600;
+}
+.nav-inner-div {
+    display: flex;
+}
+.navbar-expand {
+    justify-content: center !important;
+}
+.nav-search-input {
+    padding: 7px 60px 9px 15px;
+    border-radius: 2px;
+    border: 0 rgba(0,0,0,.2);
+    height: 39px;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    width: 1000px;
+    display: inline-block;
+}
+.nav-button-search {
+    background-image: none;
+    height: 39px;
+    padding-top: 2px;
+    background-color: #EEEEEE;
+    border-color: #EEEEEE;
+    border-radius: 0px;
+}

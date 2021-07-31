@@ -2,7 +2,7 @@ import React from 'react';
 import {ListGroup, Image, Container} from 'react-bootstrap';
 
 function List(data) {
-    let mapping = data.map(items => {
+    let mapping = data.slice(0, 4).map(items => {
         return(
             <ListGroup.Item>
                 <Image className="thumbnail-fit" src={items.thumbnail} thumbnail />

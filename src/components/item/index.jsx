@@ -14,7 +14,7 @@ function pricingSquare(pricing) {
                 <Card.Body>
                     <Card.Text className="conditions-product-card">{condition } - {sold_quantity } vendidos {freeShipping}</Card.Text>
                     <Card.Title className="title-product-card">{title}</Card.Title>
-                    <Card.Text className="price-product-card">{symbol + price}</Card.Text>
+                    <Card.Text className="price-product-card">{symbol + price.toLocaleString(2)}</Card.Text>
                     <Card.Text><Button className="button-product-card" variant="primary">Comprar</Button></Card.Text>
                 </Card.Body>
             </Card>

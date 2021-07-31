@@ -31,6 +31,14 @@
 
   - Axios
 
+**Contenedores de la SPA:**
+
+  > **_cajaBusqueda.jsx_** Contiene el componente del buscador.
+  
+  > **_resultadosBusqueda.jsx_** Contiene el componente que crea la lista de productos asociados y breadcrumbs.
+
+  > **_detalle.jsx_** Contiene el componente que mapea el producto y su descripción y breadcrumbs.
+
 ## **Server** 💻 _:_
 
 > **Archivo httpClient.js generado para realizar las invocaciones con axios desde la SPA.**
@@ -38,3 +46,5 @@
 - **_Se generó una función de invocación generica donde se le devuelven la url de las funciones para invocar servicios y los metodos_**
 
 - **_Se generó una función llamada getSimpleSearch donde se le envia el query para invocar al servicio de busqueda de ML_**
+
+- **_Se generó una función llamada getSimpleProductById donde se le envia el id del producto para que en su respuesta solo me devuelva información de dicho producto_**

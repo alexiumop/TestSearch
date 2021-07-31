@@ -20,5 +20,13 @@
 
  _Para estilizado:_ :art:
  
- - Sass
+ - Css
  - Bootstrap
+
+**Librerias utilizadas para invocaciones API Rest:**
+
+  - Axios
+
+## **Server** 💻 _:_
+
+> **Archivo httpClient.js generado para realizar las invocaciones con axios desde la SPA.**

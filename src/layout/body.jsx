@@ -13,10 +13,12 @@ const Body = () => {
                     <Route exact path="/" render={props => (
                         <CajonDeBusqueda {...props} />
                     )} />
-                    <Route exact path="/items" render={props => (
+                    <Route exact path="/items?search=" render={props => (
                         <ResultadosBusqueda {...props} />
                     )} />
-                    <Route path="detalle-producto/" component={DetalleItem} />
+                    <Route path="/items" render={props => (
+                        <DetalleItem {...props} />
+                    )} />
                 </Switch>
             </BrowserRouter>
         </>

@@ -1,9 +1,11 @@
 import React from 'react';
 import {ListGroup, Image, Container} from 'react-bootstrap';
 import shippingImage from '../../assets/ic_shipping.png';
+import httpClient from '../../server/httpClient';
 
 function List(data) {
-    let mapping = data.slice(0, 4).map(items => {
+    const listOfItems = data.location.state;
+    let mapping = listOfItems.slice(0, 4).map((items, index) => {
         let shipping = items.shipping.free_shipping === true ? <Image src={shippingImage} rounded /> : null;
         let amount = items.price.toLocaleString(2);
         let currency = items.currency_id === "ARS" ? "$" : "USD$";
@@ -12,7 +14,7 @@ function List(data) {
         let itemTitle = items.title;
         let thumbnailUrl = items.thumbnail;
         return(
-            <ListGroup.Item>
+            <ListGroup.Item key={index} onClick={event => clickOnProduct(event, items.id, data)}>
                 <Image className="thumbnail-fit" src={thumbnailUrl} thumbnail />
                 <div>{currency}{amount}</div>
                 <label>{itemTitle}</label>
@@ -25,13 +27,20 @@ function List(data) {
     return mapping;
 }
 
+function clickOnProduct(event, itemById, data) {
+    event.preventDefault();
+    httpClient.getSimpleProductById(itemById)
+    .then(itemResult => {
+        data.history.push('/items', JSON.stringify(itemResult))
+    })
+}
+
 const ResultsItems = props => {
-    const listOfItems = props.location.state;
     return(
         <>
             <Container>
                 <ListGroup>
-                    {List(listOfItems)}
+                    {List(props)}
                 </ListGroup>
             </Container>
         </>

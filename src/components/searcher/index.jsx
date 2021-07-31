@@ -14,7 +14,7 @@ const Searcher = props => {
         .then(result => {
             let listResults = result.data.results;
             props.history.push({
-                pathname: '/items',
+                pathname: '/items?search=',
                 state: listResults
             });
         });

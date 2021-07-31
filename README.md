@@ -39,7 +39,7 @@
 
   > **_detalle.jsx_** Contiene el componente que mapea el producto y su descripción y breadcrumbs.
 
-## **Server** 💻 _:_
+## **Server (Client-side)** 💻 _:_
 
 > **Archivo httpClient.js generado para realizar las invocaciones con axios desde la SPA.**
 

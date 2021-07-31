@@ -43,7 +43,7 @@ const Items = props => {
     }, [])
     return(
         <>
-            <div style={{display: "flex"}}>
+            <div className="flexing-box">
                 {descAndImageSquar(itemResult, descText)}
                 {pricingSquare(itemResult)}
             </div>

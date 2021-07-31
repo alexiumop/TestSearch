@@ -2,6 +2,9 @@
 .margin-all {
     margin-top: 16px;
 }
+.flexing-box {
+    display: flex;
+}
 /* Estilos buscador */
 
 .navBar-color {
@@ -32,11 +35,31 @@
 }
 
 /* Estilos lista de items */
-
+.list-pointer {
+    cursor: pointer;
+}
 .thumbnail-fit {
     width: 180px;
     height: 180px;
     border-radius: 4px;
+    margin:16px;
+}
+
+.price-list {
+    margin-bottom:32px;
+    font-size:24px;
+    color: #333333
+}
+.title-list {
+    font-size: 18px;
+    color: #666666;
+}
+.title-list::first-letter {
+    text-transform: uppercase;
+}
+.city-list {
+    font-size: 12px;
+    color: #999999;
 }
 
 /* Estilos del detalle del producto */

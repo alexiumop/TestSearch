@@ -14,13 +14,21 @@ function List(data) {
         let itemTitle = items.title;
         let thumbnailUrl = items.thumbnail;
         return(
-            <ListGroup.Item key={index} onClick={event => clickOnProduct(event, items.id, data)}>
-                <Image className="thumbnail-fit" src={thumbnailUrl} thumbnail />
-                <div>{currency}{amount}</div>
-                <label>{itemTitle}</label>
-                <label>{conditions}</label>
-                {shipping}
-                <label>{city}</label>
+            <ListGroup.Item className="list-pointer" key={index} onClick={event => clickOnProduct(event, items.id, data)}>
+                <div className="col-md-12 flexing-box">
+                    <div className="col-md-3">
+                        <Image className="thumbnail-fit" src={thumbnailUrl} thumbnail />
+                    </div>
+                    <div className="col-md-7">
+                        <div className="price-list">{currency } {amount } {shipping }</div>
+                        <label className="title-list">{itemTitle}</label>
+                        <br />
+                        <label className="title-list">{conditions}</label>
+                    </div>
+                    <div className="col-md-2">
+                        <label className="city-list">{city}</label>
+                    </div>
+                </div>
             </ListGroup.Item>
         )
     });

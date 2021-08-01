@@ -8,7 +8,7 @@
 
 **Scripts de inicio:** 
 
-  - npm run start:local (_Este script es utilizado para levantar la spa en modo local_)
+  - npm run start:local (_Este script es utilizado para levantar la spa en modo local_) --> **Utilizarlo para levantar la SPA posterior a haber realizado un git clone y un npm install.**
   - npm run start (_Este script es utilizado para levantar la spa en modo productivo_)
   - npm run build (_Este script es utilizado para la generación del build productivo_)
 

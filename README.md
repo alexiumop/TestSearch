@@ -53,7 +53,7 @@
 
 ## IMPORTANTE :warning: 
 
-> ### NOTA: Funcionalidad del buscador, click en la lupa para buscar resultados, buscador funcional desde cualquier vista de la SPA.
+> ### NOTA: Funcionalidad del buscador, click en la lupa para buscar resultados, buscador funcional desde cualquier vista de la SPA. Para una mejor experiencia utilizar el navegador Google Chrome.
 
 ## **Server (Client-side)** 💻 _:_
 

@@ -37,7 +37,7 @@
   
   > **_resultadosBusqueda.jsx_** Contiene el componente que crea la lista de productos asociados y breadcrumbs.
 
-  > **_detalle.jsx_** Contiene el componente que mapea el producto y su descripción y breadcrumbs.
+  > **_detalle.jsx_** Contiene el componente que mapea el producto y su descripción.
 
 **Componentes de la SPA:**
 
@@ -50,6 +50,10 @@
 **Layout:**
 
 > Contiene un wrapper nombrado **body.jsx** y en dicho wrapper se encuentra el ruteo de los 3 contenedores de la SPA.
+
+## IMPORTANTE :warning: 
+
+> ### NOTA: Funcionalidad del buscador, click en la lupa para buscar resultados, buscador funcional desde cualquier vista de la SPA.
 
 ## **Server (Client-side)** 💻 _:_
 

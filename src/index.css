@@ -34,6 +34,10 @@
     border-radius: 0px;
 }
 
+.nav-button-search:hover {
+    background-color: #EEEEEE;
+}
+
 /* Estilos lista de items */
 .list-pointer {
     cursor: pointer;

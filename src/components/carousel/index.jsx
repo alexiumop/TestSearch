@@ -5,7 +5,7 @@ function carousel(data) {
     return data.picturesItem.map((sliceImage, index) => {
         return(
             <Carousel.Item key={index}>
-                <Image src={sliceImage.secure_url} className="carousel-image"/>
+                <Image src={sliceImage.secure_url} className="carousel-image" alt="carousel"/>
             </Carousel.Item>
         )
     })

@@ -12,7 +12,7 @@ const Searcher = props => {
     const handleSubmitSearch = () => {
         httpClient.getSimpleSearch(queryTyper)
         .then(result => {
-            let listResults = result.data.results;
+            let listResults = result.data;
             props.history.push({
                 pathname: '/items?search=',
                 state: listResults

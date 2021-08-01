@@ -7,8 +7,7 @@ const DetalleItem = props => {
     return (
         <>
             <CajonDeBusqueda {...props} />
-            <Container>
-                <div className="margin-all"></div>
+            <Container className="margin-all">
                 <Items {...props} />
             </Container>
         </>

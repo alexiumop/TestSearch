@@ -1,10 +1,10 @@
 import React from 'react';
-import {ListGroup, Image, Container} from 'react-bootstrap';
+import {ListGroup, Image} from 'react-bootstrap';
 import shippingImage from '../../assets/ic_shipping.png';
 import httpClient from '../../server/httpClient';
 
 function List(data) {
-    const listOfItems = data.location.state;
+    const listOfItems = data.location.state.results;
     let mapping = listOfItems.slice(0, 4).map((items, index) => {
         let shipping = items.shipping.free_shipping === true ? <Image src={shippingImage} rounded /> : null;
         let amount = items.price.toLocaleString(2);
@@ -46,11 +46,11 @@ function clickOnProduct(event, itemById, data) {
 const ResultsItems = props => {
     return(
         <>
-            <Container>
-                <ListGroup>
-                    {List(props)}
-                </ListGroup>
-            </Container>
+            
+            <ListGroup>
+                {List(props)}
+            </ListGroup>
+            
         </>
     )
 }

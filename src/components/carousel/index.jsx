@@ -13,7 +13,7 @@ function carousel(data) {
 const itemCarousel = props => {
     return(
         <>
-            <Carousel>
+            <Carousel interval={1000}>
                 {carousel(props)}
             </Carousel>
         </>

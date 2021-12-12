@@ -66,3 +66,19 @@
 - **_Se generó una función llamada getSimpleProductById donde se le envia el id del producto para que en su respuesta solo me devuelva información de dicho producto_**
 
 - **_Se generó una función llamada getSimpleProductByIdDesc donde se le envia el id del producto y solo se solicita la descripción especifica de ese producto en su respuesta_**
+
+# IMAGENES DE LA SPA POSTERIOR A SER EJECUTADA EN EL NAVEGADOR:
+
+1. Vista del buscador:
+
+![](src/assets/cajon.png)
+
+2. Vista de la lista de resultados:
+
+![](src/assets/resultado.png)
+
+3. Vistas del detalle del producto:
+
+![](src/assets/producto1.png)
+
+![](src/assets/producto2.png)

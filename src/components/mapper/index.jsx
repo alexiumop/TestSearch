@@ -19,7 +19,7 @@ function List(data) {
                     <div className="col-md-3">
                         <Image className="thumbnail-fit" src={thumbnailUrl} thumbnail />
                     </div>
-                    <div className="col-md-7">
+                    <div className="col-md-7 list-small-medium">
                         <div className="price-list">{currency } {amount } {shipping }</div>
                         <label className="title-list">{itemTitle}</label>
                         <br />

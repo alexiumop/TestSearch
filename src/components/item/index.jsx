@@ -9,7 +9,7 @@ function pricingSquare(pricing) {
     let symbol = currency_id === "ARS" ? "$" : "USD$";
     let freeShipping = pricing.data.shipping.free_shipping === true ? <Image src={ImageShipping} rounded /> : null;
     return(
-        <div className="col-md-4">
+        <div className="col-md-4 col-xs-4">
             <Card>
                 <Card.Body>
                     <Card.Text className="conditions-product-card">{condition } - {sold_quantity } vendidos {freeShipping}</Card.Text>
@@ -24,7 +24,7 @@ function pricingSquare(pricing) {
 function descAndImageSquar(imagesUrls, desc) {
     let images = imagesUrls.data.pictures;
     return(
-        <div className="col-md-8">
+        <div className="col-md-8 col-xs-8">
             <ItemCarousel picturesItem={images} />
             <span className="title-description">Descripción del Producto</span>
             <p className="text-description">{desc}</p>
@@ -34,12 +34,12 @@ function descAndImageSquar(imagesUrls, desc) {
 const Items = props => {
     const [itemResult] = useState(JSON.parse(props.location.state));
     const [descText, setDescText] = useState('');
-    useEffect(() => {
-        let id = itemResult.data.id 
-        httpClient.getSimpleProductByIdDesc(id)
+    useEffect((item = itemResult) => {
+        httpClient.getSimpleProductByIdDesc(item.data.id)
         .then(description => {
             setDescText(description.data.plain_text);
         })
+        // eslint-disable-next-line
     }, [])
     return(
         <>

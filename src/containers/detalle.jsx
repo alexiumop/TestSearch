@@ -7,7 +7,7 @@ const DetalleItem = props => {
     return (
         <>
             <CajonDeBusqueda {...props} />
-            <Container className="margin-all">
+            <Container fluid="sm" className="margin-all">
                 <Items {...props} />
             </Container>
         </>

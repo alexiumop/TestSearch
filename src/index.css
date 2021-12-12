@@ -117,3 +117,23 @@
     margin-right: 32px;
     width: 300px;
 }
+
+/* Responsive design*/
+
+@media screen  and (min-width: 400px) and (max-width: 900px) {
+    .nav-search-input {
+        width: auto;
+    }
+    .list-small-medium {
+        padding-left: 50px;
+    }
+}
+
+@media screen  and (min-width: 901px) and (max-width: 1080px) {
+    .nav-search-input {
+        width: 700px;
+    }
+    .list-small-medium {
+        padding-left: 50px;
+    }
+}
